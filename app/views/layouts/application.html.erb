@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- navbar here -->
+    <a href="">Home</a>
+    <a href="">Gallery</a>
+    <a href="">Build Service</a>
+    <a href="">Blog</a>
+    <%= yield %>
+  </body>
+  <footer>
+    <p>Copyright 2021</p>
+    <p><a href="">Instagram</a> <a href="">Twitch</a> <a href="">Discord</a> <a href="">Youtube</a></p>
+  </footer>
+</html>
