@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
 
+  get 'shop/shop'
+  get 'shop/checkout'
   root 'home#index'
   get 'build_service/form'
   # get 'index/index'
