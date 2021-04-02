@@ -1,8 +1,8 @@
 require "test_helper"
 
 class BuildServiceControllerTest < ActionDispatch::IntegrationTest
-  test "should get form" do
-    get build_service_form_url
+  test "should get index" do
+    get build_service_index_url
     assert_response :success
   end
 end
