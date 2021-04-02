@@ -1,4 +1,6 @@
 class ShopController < ApplicationController
-  def shop
+  def index
+  end
+  def checkout
   end
 end

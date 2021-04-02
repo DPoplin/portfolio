@@ -13,10 +13,11 @@
   <body>
     <!-- navbar here -->
     <a href="/">Home</a>
-    <a href="gallery/gallery">Gallery</a>
-    <a href="shop/shop">Shop</a>
-    <a href="build_service/form">Build Service</a>
-    <a href="blog/feed">Blog</a>
+    <%= link_to "Gallery", gallery_path %>
+    <%= link_to "Shop", shop_path %>
+    <%= link_to "Build Service", build_service_path%>
+    <%= link_to "Blog", blog_path%>
+   
     <%= yield %>
   </body>
   <footer>

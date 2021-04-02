@@ -1,4 +1,4 @@
 class BuildServiceController < ApplicationController
-  def form
+  def index
   end
 end
