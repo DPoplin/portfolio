@@ -8,3 +8,11 @@
  *= require_tree .
  *= require spree/frontend/solidus_paypal_commerce_platform
 */
+
+body {
+    background-color: black;
+}
+
+#product-description {
+    color: white;
+}
