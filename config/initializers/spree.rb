@@ -95,7 +95,7 @@ Spree.config do |config|
       display_on_product_page: true,
       display_on_cart: true,
     }
-  # )
+  )
 end
 
 Spree::Frontend::Config.configure do |config|
