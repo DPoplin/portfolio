@@ -22,9 +22,12 @@ p {
         font-size: 16px;
         color: $white;
 }
-// a:visited {
-//         color: $black;
+// a {
+//         color: blue;
 // }
+.nav-link {
+        color: black;
+}
 .jumbotron {
         background: #0048CD;
         color: $white;
