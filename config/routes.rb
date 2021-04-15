@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/build_service', to: 'build_service#index'
   get '/blog', to: 'blog#index'
-  # get '/shop', to: 'shop#index'
   get '/shop/checkout', to: 'shop#checkout'
   get '/gallery', to: 'gallery#index'
   get '/gallery/keyboards', to: 'gallery#keyboards'
