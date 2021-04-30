@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<%= @cable.photo %>
+<p>Paracord Color: <%= @cable.paracord %></p>
+<p>Techflex Color: <%= @cable.techflex %></p>
+<p>Heatshrink Color: <%= @cable.heatshrink %></p>
+<p>Connector Type: <%= @cable.connector %></p>
+<p>Build Date: <%= @cable.build_date %></p>
+
+<%= link_to 'Edit', edit_cable_path(@cable) %> |
+<%= link_to 'Back', cables_path %>

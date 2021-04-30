@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @keyboard.name %></h1>
+<%= @keyboard.photo %>
+<p>Switches: <%= @keyboard.switches %></p>
+<p>Keycaps: <%= @keyboard.keycaps %></p>
+<p>Build Date: <%= @keyboard.build_date %></p>
+
+<%= link_to 'Edit', edit_keyboard_path(@keyboard) %> |
+<%= link_to 'Back', keyboards_path %>

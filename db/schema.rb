@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_02_214611) do
+ActiveRecord::Schema.define(version: 2021_04_29_225634) do
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -59,6 +59,16 @@ ActiveRecord::Schema.define(version: 2021_04_02_214611) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "cables", force: :cascade do |t|
+    t.datetime "build_date"
+    t.string "paracord"
+    t.string "techflex"
+    t.string "heatshrink"
+    t.string "connector"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -70,6 +80,15 @@ ActiveRecord::Schema.define(version: 2021_04_02_214611) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+  create_table "keyboards", force: :cascade do |t|
+    t.string "name"
+    t.datetime "build_date"
+    t.string "switches"
+    t.string "keycaps"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "paypal_commerce_platform_sources", force: :cascade do |t|

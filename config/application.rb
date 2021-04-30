@@ -1,8 +1,8 @@
-require_relative "boot"
+require_relative 'boot'
 
-require "rails/all"
+require 'rails/all'
 
-
+require 'active_storage/engine'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -12,7 +12,7 @@ Dotenv::Railtie.load
 module Webshop
   class Application < Rails::Application
     # Load application's model / class decorators
-    initializer 'spree.decorators' do |app|
+    initializer 'spree.decorators' do |_app|
       config.to_prepare do
         Dir.glob(Rails.root.join('app/**/*_decorator*.rb')) do |path|
           require_dependency(path)

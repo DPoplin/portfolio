@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Webshop</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://kit.fontawesome.com/a11222043e.js" crossorigin="anonymous"></script>
-    <%# Include jquery %>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </head>
-  <body>
- <%# navbar here %>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">DaniPopDesigns</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<head>
+  <title>Webshop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <div class="nav-link" href="/"><%= link_to "Home", "/" %> <span class="sr-only">(current)</span></div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-link"><%= link_to "Shop", "/shop" %></div>
-      </li>
-      <li class="nav-item dropdown">
-        <div class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <%= link_to "Gallery", gallery_path %>
-        </div>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <div class="dropdown-item" ><%= link_to "Keyboards", "/gallery/keyboards" %></div>
-          <div class="dropdown-item" ><%= link_to "Cables", "/gallery/cables" %></div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-link"><%= link_to "Build Service", build_service_path%></div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-link"><%= link_to "Blog", blog_path%></div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-    <%# <a href="/">Home</a>
-    <%= link_to "Gallery", gallery_path %>
-    <%# <%= link_to "Shop", "/shop" %>
-    <%# <%= link_to "Build Service", build_service_path%> 
-    <%# <%= link_to "Blog", blog_path%> 
-     
-    <%= yield %>
-  </body>
-  <footer>
-    <p>Copyright 2021</p>
-    <p><a href="http://www.instagram.com/danipopdesigns"><i class="fab fa-instagram"></i></a> <a href="http://www.twitch.tv/danipopdesigns"><i class="fab fa-twitch"></i></a> <a href="https://www.youtube.com/channel/UCrYEvikhRNT8UOxKmCwXw-Q"><i class="fab fa-youtube"></i></a> <a href=""> <i class="fab fa-discord"></i></a></p>
-  </footer>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="https://kit.fontawesome.com/a11222043e.js" crossorigin="anonymous"></script>
+  <%# Include jquery %>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</head>
+
+<%# <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Cover</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header> %>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <%# navbar here %>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+  <div>
+  <h3 class="float-md-start mb-0">Dani Pop Designs</h3>
+
+  <nav class="nav nav-masthead justify-content-center float-md-end">
+    <div class="nav-link active" href="/"><%= link_to "Home", "/" %> <span class="sr-only">(current)</span></div>
+    <div class="nav-link"><%= link_to "Shop", "/shop" %></div>
+    <div class="nav-link"><%= link_to "Gallery", gallery_path %></div>
+    <div class="nav-link"><%= link_to "Build Service", build_service_path%></div>
+    <div class="nav-link"><%= link_to "Blog", blog_path%></div>
+  </nav>
+
+  <%= yield %>
+</body>
+<footer>
+  <p>Copyright 2021</p>
+  <p><a href="http://www.instagram.com/danipopdesigns"><i class="fab fa-instagram"></i></a> <a
+      href="http://www.twitch.tv/danipopdesigns"><i class="fab fa-twitch"></i></a> <a
+      href="https://www.youtube.com/channel/UCrYEvikhRNT8UOxKmCwXw-Q"><i class="fab fa-youtube"></i></a> <a href=""> <i
+        class="fab fa-discord"></i></a></p>
+</footer>
+</div>
 </html>

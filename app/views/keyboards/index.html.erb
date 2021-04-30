@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Keyboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @keyboards.each do |keyboard| %>
+      <tr>
+        <td>
+          <%= keyboard.photo %>
+          <h2><%= keyboard.name %></h2>
+          <%= keyboard.switches %>
+          <%= keyboard.build_date %>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <%= link_to 'Show', keyboard %>
+          <%= link_to 'Edit', edit_keyboard_path(keyboard) %>
+          <%= link_to 'Destroy', keyboard, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Keyboard', new_keyboard_path %>

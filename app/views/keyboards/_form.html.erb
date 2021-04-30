@@ -1,0 +1,38 @@
+<%= form_with(model: keyboard) do |form| %>
+    <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%= form.label :build_date %>
+    <%= form.datetime_field :build_date, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%= form.label :switches %>
+    <%= form.text_field :switches, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%= form.label :keycaps %>
+    <%= form.text_field :keycaps, :class => 'form-control' %>
+    </div>
+     <div class="form-group">
+    <%= form.label :photo %>
+    <%= form.file_field :keycaps, :class => 'form-control', multiple: true %>
+    </div>
+  
+  <% if keyboard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(keyboard.errors.count, "error") %> prohibited this keyboard from being saved:</h2>
+
+      <ul>
+        <% keyboard.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

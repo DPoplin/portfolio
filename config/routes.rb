@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :cables
+  resources :keyboards
   root 'home#index'
   get '/build_service', to: 'build_service#index'
   get '/blog', to: 'blog#index'

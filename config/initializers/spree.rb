@@ -5,10 +5,10 @@ Spree.config do |config|
   # Core:
 
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = 'USD'
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = 'store@example.com'
 
   # Use combined first and last name attribute in HTML views and API responses
   config.use_combined_first_and_last_name_in_address = true
@@ -65,20 +65,18 @@ Spree.config do |config|
   # to a custom users role:
   # config.roles.assign_permissions :role_name, ['Spree::PermissionSets::CustomPermissionSet']
 
-
   # Frontend:
 
   # Custom logo for the frontend
-  config.logo = "logo/solidus.svg"
+  config.logo = 'logo/solidus.svg'
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
 
-
   # Admin:
 
   # Custom logo for the admin
-  config.admin_interface_logo = "logo/solidus.svg"
+  config.admin_interface_logo = 'logo/solidus.svg'
 
   # Gateway credentials can be configured statically here and referenced from
   # the admin. They can also be fully configured from the admin.
@@ -93,7 +91,7 @@ Spree.config do |config|
       client_id: ENV['PAYPAL_CLIENT_ID'],
       client_secret: ENV['PAYPAL_CLIENT_SECRET'],
       display_on_product_page: true,
-      display_on_cart: true,
+      display_on_cart: true
     }
   )
 end
@@ -119,7 +117,7 @@ Spree::Api::Config.configure do |config|
   config.requires_authentication = true
 end
 
-Spree.user_class = "Spree::LegacyUser"
+Spree.user_class = 'Spree::LegacyUser'
 
 # Rules for avoiding to store the current path into session for redirects
 # When at least one rule is matched, the request path will not be stored

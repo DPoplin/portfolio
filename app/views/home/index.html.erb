@@ -1,15 +1,40 @@
+    
+<%# <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Cover</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header> %>
 
-<h1>DaniPopDesigns</h1>
+  <main class="px-3">
+    <p class="lead">Hey there! I'm Dani, a keyboard enthusiast who makes custom keyboard cables. Follow along to see my custom keyboard journey.</p>
+    <div class="lead">
+      <h2><%= link_to "My Keyboard Journey", blog_path %></h2>
+      <p>Want to know how I got into the hobby? Have questions about my recent builds? This is the place to be.</p>
+    </div>
+   <div class="lead">
+      <h2><%= link_to "Gallery", gallery_path %></h2>
+    </div>
+    <div class="lead">
+      <h2><%= link_to "Shop", "/shop" %></h2>
+    </div>
+    <div class="lead">
+        <h2><%= link_to "Build Service", build_service_path %></h2>
+        <p>Interested in having me build a keyboard for you? I would love to solder and assemble your new keyboard. Fill out my form for additional information!</p>
+    </div>
+  </main>
 
-<h2>Bio</h2>
-<p>Hey there! I'm Dani, a keyboard enthusiast who makes custom keyboard cables. You can catch me on twitch: <a href="https://www.twitch.tv/danipopdesigns">@danipopdesigns</a> and instagram: <a href="https://www.instagram.com/danipopdesigns/">@danipopdesigns</a>. Follow along to see my keyboard journey.</p>
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
+</div>
 
-<h2><%= link_to "My Keyboard Journey", blog_path %></h2>
-<p>Want to know how I got into the hobby? Have questions about my recent builds? This is the place to be.</p>
 
-<h2><%= link_to "Gallery", gallery_path %></h2>
-
-<h2><%= link_to "Shop", "/shop" %></h2>
-
-<h2><%= link_to "Build Service", build_service_path %></h2>
-<p>Interested in having me build a keyboard for you? I would love to solder and assemble your new keyboard. Fill out my form for additional information!</p>
+    
+  </body>
+</html>
