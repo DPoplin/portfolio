@@ -1,3 +1,4 @@
+<p>Interested in having me build your keyboard live on Twitch? Fill out this form and we can talk about what you're looking for. At this time, I do not source parts so please note that all parts will need to be shipped to me prior to the build.</p>
 <%= form_with(model: build_service) do |form| %>
   <% if build_service.errors.any? %>
     <div id="error_explanation">
@@ -32,7 +33,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :lube_service %>
+    <%= form.label :lube_service? %>
     <%= form.check_box :lube_service %>
   </div>
 

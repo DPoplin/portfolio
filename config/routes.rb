@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   resources :cables
   resources :keyboards
   root 'home#index'
-  get '/build_service', to: 'build_service#index'
   get '/blog', to: 'blog#index'
   get '/shop/checkout', to: 'shop#checkout'
   get '/gallery', to: 'gallery#index'
   get '/gallery/keyboards', to: 'gallery#keyboards'
   get '/gallery/cables', to: 'gallery#cables'
+  
   # This line mounts Solidus's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
