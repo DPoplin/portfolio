@@ -1,0 +1,57 @@
+<%= form_with(model: build_service) do |form| %>
+  <% if build_service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(build_service.errors.count, "error") %> prohibited this build_service from being saved:</h2>
+
+      <ul>
+        <% build_service.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :keyboard %>
+    <%= form.text_field :keyboard %>
+  </div>
+
+  <div class="field">
+    <%= form.label :switches %>
+    <%= form.text_field :switches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lube_service %>
+    <%= form.check_box :lube_service %>
+  </div>
+
+  <div class="field">
+    <%= form.label :build_timeline %>
+    <%= form.datetime_select :build_timeline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paypal %>
+    <%= form.text_field :paypal %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

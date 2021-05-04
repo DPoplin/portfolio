@@ -65,6 +65,6 @@ class KeyboardsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def keyboard_params
-    params.fetch(:keyboard, {}).permit(:name, :build_date, :switches, :keycaps, :photo [], :id)
+    params.fetch(:keyboard, {}).permit(:name, :build_date, :switches, :keycaps, :photo, :id)
   end
 end

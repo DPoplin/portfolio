@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @build_service.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @build_service.email %>
+</p>
+
+<p>
+  <strong>Keyboard:</strong>
+  <%= @build_service.keyboard %>
+</p>
+
+<p>
+  <strong>Switches:</strong>
+  <%= @build_service.switches %>
+</p>
+
+<p>
+  <strong>Lube service:</strong>
+  <%= @build_service.lube_service %>
+</p>
+
+<p>
+  <strong>Build timeline:</strong>
+  <%= @build_service.build_timeline %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @build_service.address %>
+</p>
+
+<p>
+  <strong>Paypal:</strong>
+  <%= @build_service.paypal %>
+</p>
+
+<%= link_to 'Edit', edit_build_service_path(@build_service) %> |
+<%= link_to 'Back', build_services_path %>

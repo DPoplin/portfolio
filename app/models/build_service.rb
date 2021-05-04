@@ -1,0 +1,2 @@
+class BuildService < ApplicationRecord
+end

@@ -1,3 +1,3 @@
 class Keyboard < ApplicationRecord
-  has_many_attached :photo
+  has_one_attached :photo
 end

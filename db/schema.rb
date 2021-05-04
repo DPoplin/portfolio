@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_29_225634) do
+ActiveRecord::Schema.define(version: 2021_05_03_221501) do
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -59,6 +59,19 @@ ActiveRecord::Schema.define(version: 2021_04_29_225634) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "build_services", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "keyboard"
+    t.string "switches"
+    t.boolean "lube_service"
+    t.datetime "build_timeline"
+    t.text "address"
+    t.string "paypal"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "cables", force: :cascade do |t|
     t.datetime "build_date"
     t.string "paracord"
@@ -86,9 +99,9 @@ ActiveRecord::Schema.define(version: 2021_04_29_225634) do
     t.string "name"
     t.datetime "build_date"
     t.string "switches"
-    t.string "keycaps"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "keycaps"
   end
 
   create_table "paypal_commerce_platform_sources", force: :cascade do |t|

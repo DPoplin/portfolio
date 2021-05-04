@@ -1,5 +1,4 @@
-    
-<%# <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <%# <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Cover</h3>
@@ -11,30 +10,33 @@
     </div>
   </header> %>
 
-  <main class="px-3">
-    <p class="lead">Hey there! I'm Dani, a keyboard enthusiast who makes custom keyboard cables. Follow along to see my custom keyboard journey.</p>
-    <div class="lead">
-      <h2><%= link_to "My Keyboard Journey", blog_path %></h2>
-      <p>Want to know how I got into the hobby? Have questions about my recent builds? This is the place to be.</p>
-    </div>
-   <div class="lead">
-      <h2><%= link_to "Gallery", gallery_path %></h2>
-    </div>
-    <div class="lead">
-      <h2><%= link_to "Shop", "/shop" %></h2>
-    </div>
-    <div class="lead">
-        <h2><%= link_to "Build Service", build_service_path %></h2>
-        <p>Interested in having me build a keyboard for you? I would love to solder and assemble your new keyboard. Fill out my form for additional information!</p>
-    </div>
-  </main>
+    <main class="px-3">
+      <div class="bio lead">
+        <p class="lead">Hey there! I'm Dani, a keyboard enthusiast who makes custom keyboard cables. Follow along to see
+          my custom keyboard journey.</p>
+      </div>
+        <div class="lead blog">
+          <h2><%= link_to "My Keyboard Journey", blog_path %></h2>
+          <p>Want to know how I got into the hobby? Have questions about my recent builds? This is the place to be.</p>
+        </div>
+        <div class="lead gallery">
+          <h2><%= link_to "Gallery", gallery_path %></h2>
+          <%# keyboard gallery link and photo %>
+          <%# cable gallery link and photo %>
+        </div>
+        <div class="lead shop">
+          <h2><%= link_to "Shop", "/shop" %></h2>
+        </div>
+        <div class="lead build_service">
+          <h2><%= link_to "Build Service", build_service_path %></h2>
+          <p>Interested in having me build a keyboard for you? I would love to solder and assemble your new keyboard.
+            Fill out my form for additional information!</p>
+        </div>
 
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
+    </main>
 
+    </div>
 
-    
-  </body>
-</html>
+    </body>
+
+    </html>

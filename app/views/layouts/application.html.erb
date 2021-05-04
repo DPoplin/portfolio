@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Webshop</title>
+  <title>Dani Pop Designs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
@@ -34,30 +34,198 @@
     </div>
   </header> %>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <%# navbar here %>
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-  <div>
-  <h3 class="float-md-start mb-0">Dani Pop Designs</h3>
+<body class="text-center text-white bg-dark">
+  <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <%# navbar here %>
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Dani Pop Designs</h3>
 
-  <nav class="nav nav-masthead justify-content-center float-md-end">
-    <div class="nav-link active" href="/"><%= link_to "Home", "/" %> <span class="sr-only">(current)</span></div>
-    <div class="nav-link"><%= link_to "Shop", "/shop" %></div>
-    <div class="nav-link"><%= link_to "Gallery", gallery_path %></div>
-    <div class="nav-link"><%= link_to "Build Service", build_service_path%></div>
-    <div class="nav-link"><%= link_to "Blog", blog_path%></div>
-  </nav>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <div class="nav-link active" href="/"><%= link_to "Home", "/" %> <span class="sr-only">(current)</span>
+            </div>
+            <div class="nav-link"><%= link_to "Shop", "/shop" %></div>
+            <div class="nav-link"><%= link_to "Gallery", gallery_path %></div>
+            <div class="nav-link"><%= link_to "Build Service", build_service_path%></div>
+            <div class="nav-link"><%= link_to "Blog", blog_path%></div>
+          </nav>
 
-  <%= yield %>
+          <%= yield %>
+        </div>
 </body>
-<footer>
-  <p>Copyright 2021</p>
-  <p><a href="http://www.instagram.com/danipopdesigns"><i class="fab fa-instagram"></i></a> <a
-      href="http://www.twitch.tv/danipopdesigns"><i class="fab fa-twitch"></i></a> <a
-      href="https://www.youtube.com/channel/UCrYEvikhRNT8UOxKmCwXw-Q"><i class="fab fa-youtube"></i></a> <a href=""> <i
-        class="fab fa-discord"></i></a></p>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="http://www.instagram.com/danipopdesigns" role="button"><i
+          class="fab fa-instagram"></i></a>
+      <!-- Twitch -->
+      <a class="btn btn-outline-light btn-floating m-1" href="http://www.twitch.tv/danipopdesigns" role="button"><i
+          class="fab fa-twitch"></i></a>
+      <!-- YouTube -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCrYEvikhRNT8UOxKmCwXw-Q"
+        role="button"><i class="fab fa-youtube"></i></a>
+
+      <!-- Discord -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-discord"></i></a>
+
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <%# <label class="form-label" for="form5Example2">Email address</label> %>
+                <input type="email" id="form5Example2" class="form-control" placeholder="Email Address" />
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Links -->
+      <%# <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container --> %>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p> © 2021 Copyright: Dani Pop Designs </p>
+      </div>
+      <!-- Copyright -->
 </footer>
-</div>
+<!-- Footer -->
+
 </html>

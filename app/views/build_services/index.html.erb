@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Build Services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Keyboard</th>
+      <th>Switches</th>
+      <th>Lube service</th>
+      <th>Build timeline</th>
+      <th>Address</th>
+      <th>Paypal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @build_services.each do |build_service| %>
+      <tr>
+        <td><%= build_service.name %></td>
+        <td><%= build_service.email %></td>
+        <td><%= build_service.keyboard %></td>
+        <td><%= build_service.switches %></td>
+        <td><%= build_service.lube_service %></td>
+        <td><%= build_service.build_timeline %></td>
+        <td><%= build_service.address %></td>
+        <td><%= build_service.paypal %></td>
+        <td><%= link_to 'Show', build_service %></td>
+        <td><%= link_to 'Edit', edit_build_service_path(build_service) %></td>
+        <td><%= link_to 'Destroy', build_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Build Service', new_build_service_path %>

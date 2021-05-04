@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  keyboard: MyString
+  switches: MyString
+  lube_service: false
+  build_timeline: 2021-05-03 17:15:01
+  address: MyText
+  paypal: MyString
+
+two:
+  name: MyString
+  email: MyString
+  keyboard: MyString
+  switches: MyString
+  lube_service: false
+  build_timeline: 2021-05-03 17:15:01
+  address: MyText
+  paypal: MyString

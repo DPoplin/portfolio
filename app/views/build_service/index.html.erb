@@ -1,7 +1,13 @@
 <h1>Build Service</h1>
 <p>Interested in having me build your keyboard live on Twitch? Fill out this form and we can talk about what you're looking for. At this time, I do not source parts so please note that all parts will need to be shipped to me prior to the build.</p>
 
-<!-- Embed a google form instead? -->
+<%= form_with model: Post.new do |form| %>
+  <%= form.text_field :title %>
+<% end %>
+
+<%= form_with do |form| %>
+    <%= form.label :pet_dog, "I own a dog" %>
+    <%= form.check_box :pet_dog %>
 
 <form action="/index" method="post">
 <label for="name">Name:</label>
@@ -30,3 +36,5 @@
 <br>
 <input type="submit" value="Submit">
 </form>
+
+<% end %>

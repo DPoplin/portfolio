@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :build_services
   resources :cables
   resources :keyboards
   root 'home#index'
