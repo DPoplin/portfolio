@@ -416,6 +416,7 @@ DEPENDENCIES
   bootstrap (~> 4.0)
   byebug
   capybara (>= 3.26)
+  devise
   dotenv-rails
   jbuilder (~> 2.7)
   jquery-rails
