@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blog_posts
   devise_for :users
   resources :build_services
   resources :cables
