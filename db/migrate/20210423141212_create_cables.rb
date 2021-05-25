@@ -6,6 +6,7 @@ class CreateCables < ActiveRecord::Migration[6.1]
       t.string :techflex
       t.string :heatshrink
       t.string :connector
+      t.binary :photo
       t.timestamps
     end
   end

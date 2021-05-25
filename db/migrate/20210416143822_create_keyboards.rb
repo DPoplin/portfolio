@@ -5,6 +5,7 @@ class CreateKeyboards < ActiveRecord::Migration[6.1]
       t.datetime :build_date
       t.string :switches
       t.string :keycaps
+      t.binary :photo
       t.timestamps
     end
   end
