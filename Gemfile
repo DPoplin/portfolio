@@ -25,7 +25,7 @@ gem 'jquery-rails'
 gem 'pry', '~> 0.13.1'
 # Use solidus e-commerce
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
-gem 'solidus'
+# gem 'solidus'
 
 gem 'devise'
 
@@ -67,7 +67,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'solidus_auth_devise'
-gem 'solidus_paypal_commerce_platform'
+# gem 'solidus_auth_devise'
+# gem 'solidus_paypal_commerce_platform'
 
 gem 'pg', '~> 1.1'
