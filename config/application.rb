@@ -7,9 +7,7 @@ require 'active_storage/engine'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-if ['development', 'test'].include? ENV['RAILS_ENV']
   Dotenv::Railtie.load
-end
 
 module Webshop
   class Application < Rails::Application
